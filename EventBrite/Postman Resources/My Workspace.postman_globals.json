@@ -1,0 +1,29 @@
+{
+	"id": "03152aa8-22b7-49d1-8df1-2095f74f86fc",
+	"values": [
+		{
+			"key": "token",
+			"value": "fe8da52d-d1f7-4aaa-bc5f-e84ab4d2adce",
+			"enabled": true
+		},
+		{
+			"key": "organisation",
+			"value": "uob_my_20180205_114056_198875465",
+			"enabled": true
+		},
+		{
+			"key": "surferAuth",
+			"value": "89a359fc-e84d-4bf4-9f39-505a3266fac6",
+			"enabled": true
+		},
+		{
+			"key": "surferOrganisationId",
+			"value": "c1demo1",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2019-06-21T13:22:18.839Z",
+	"_postman_exported_using": "Postman/7.2.0"
+}

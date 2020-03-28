@@ -1,0 +1,943 @@
+{
+	"info": {
+		"_postman_id": "0d45c240-e3ee-7f63-e178-b61c943fb977",
+		"name": "Enterpryze Public API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Business Partner",
+			"item": [
+				{
+					"name": "ReadBusinessPartners",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/business-partner?$skip={{skip}}&$top={{top}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"business-partner"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "{{skip}}"
+								},
+								{
+									"key": "$top",
+									"value": "{{top}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadBusinessPartner",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/business-partner/C70000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"business-partner",
+								"C70000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateBusinessPartner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-T",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cardCode\": \"e43c6186-59f8-4803-a7b0-142ef5382037\",\n    \"contactType\": \"Customer\",\n    \"name\": \"Business Partner e43c6186-59f8-4803-a7b0-142ef5382037\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/business-partner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"business-partner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBusinessPartner",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cardCode\": \"W00025\",\n    \"contactType\": \"Customer\",\n    \"name\": \"Wojtek updated thrice 028\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/business-partner/W00028",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"business-partner",
+								"W00028"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "ReadChartOfAccounts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/accounts/chart?$skip={{skip}}&$top={{top}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"accounts",
+								"chart"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "{{skip}}"
+								},
+								{
+									"key": "$top",
+									"value": "{{top}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales",
+			"item": [
+				{
+					"name": "ReadSalesOrders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/sales/order?$skip={{skip}}&$top={{top}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"order"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "{{skip}}"
+								},
+								{
+									"key": "$top",
+									"value": "{{top}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadSalesOrder",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/sales/order/247",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"order",
+								"247"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateSalesOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"docType\": \"I\",\r\n  \"cardCode\": \"C50000\",\r\n  \"billToCode\": \"Added in Self Service\",\r\n  \"shipToCode\": \"Ship to\",\r\n  \"ownerEmployeeId\": 1,\r\n  \"docDate\": \"2018-06-15T10:45:32.718Z\",\r\n  \"docDueDate\": \"2018-07-15T10:45:32.720Z\",\r\n  \"salesPersonId\": 1,\r\n  \"discountPercent\": 0,\r\n  \"customerReferenceNumber\": \"53453\",\r\n  \"currency\": \"EUR\",\r\n  \"contactPersonId\": 213,\r\n  \"items\": [\r\n    {\r\n      \"lineType\": 0,\r\n      \"lineText\": \"Test text line\",\r\n      \"afterLineNumber\": -1,\r\n      \"_delete\": false\r\n    },\r\n    {\r\n      \"selectedItemGroupId\": 100,\r\n      \"selectedItem\": {\r\n        \"id\": \"MI-I00009\",\r\n        \"isWithholdingTaxLiable\": true,\r\n        \"name\": null,\r\n        \"groupName\": \"Items\",\r\n        \"vatCode\": \"O1\",\r\n        \"taxCode\": \"O1\"\r\n      },\r\n      \"itemCode\": \"MI-I00009\",\r\n      \"description\": \"This is my test item\",\r\n      \"warehouseCode\": \"01\",\r\n      \"priceBeforeDiscount\": 100,\r\n      \"currency\": \"\",\r\n      \"discountPercent\": 0,\r\n      \"priceAfterDiscount\": 100,\r\n      \"totalPrice\": 1050,\r\n      \"quantity\": 10.5,\r\n      \"isWithholdingTaxLiable\": false,\r\n      \"_delete\": false\r\n    }\r\n  ],\r\n  \"bankCode\": \"HSBC2\",\r\n  \"bankAccount\": \"55878012\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/sales/order",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadSalesDeliveries",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/sales/delivery?$skip={{skip}}&$top={{top}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"delivery"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "{{skip}}"
+								},
+								{
+									"key": "$top",
+									"value": "{{top}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadSalesDelivery",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/sales/delivery/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"delivery",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadSalesInvoices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/sales/invoice?$skip={{skip}}&$top={{top}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"invoice"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "{{skip}}"
+								},
+								{
+									"key": "$top",
+									"value": "{{top}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadSalesInvoice",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/sales/invoice/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"invoice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateSalesInvoice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"docType\": \"I\",\r\n  \"cardCode\": \"C50000\",\r\n  \"billToCode\": \"Added in Self Service\",\r\n  \"shipToCode\": \"Ship to\",\r\n  \"ownerEmployeeId\": 1,\r\n  \"docDate\": \"2018-06-15T10:45:32.718Z\",\r\n  \"docDueDate\": \"2018-07-15T10:45:32.720Z\",\r\n  \"salesPersonId\": 1,\r\n  \"status\": \"O\",\r\n  \"discountPercent\": 0,\r\n  \"customerReferenceNumber\": \"53453\",\r\n  \"currency\": \"EUR\",\r\n  \"contactPersonId\": 213,\r\n  \"items\": [\r\n    {\r\n      \"lineType\": 0,\r\n      \"lineText\": \"Test text line\",\r\n      \"afterLineNumber\": -1,\r\n      \"_delete\": false\r\n    },\r\n    {\r\n      \"selectedItemGroupId\": 100,\r\n      \"selectedItem\": {\r\n        \"_id\": \"item_MI-I00009\",\r\n        \"id\": \"MI-I00009\",\r\n        \"isWithholdingTaxLiable\": true,\r\n        \"name\": null,\r\n        \"groupName\": \"Items\",\r\n        \"vatCode\": \"O1\",\r\n        \"taxCode\": \"O1\"\r\n      },\r\n      \"itemCode\": \"MI-I00009\",\r\n      \"description\": \"This is my test item\",\r\n      \"warehouseCode\": \"01\",\r\n      \"stockLevel\": 0,\r\n      \"checkingPriceInProgress\": false,\r\n      \"priceBeforeDiscount\": 100,\r\n      \"currency\": \"\",\r\n      \"discountPercent\": 0,\r\n      \"priceAfterDiscount\": 100,\r\n      \"totalPrice\": 1050,\r\n      \"quantity\": 10.5,\r\n      \"isWithholdingTaxLiable\": false,\r\n      \"_delete\": false\r\n    }\r\n  ],\r\n  \"bankCode\": \"HSBC2\",\r\n  \"bankName\": \"HSBC(House Bank 3)\",\r\n  \"bankAccount\": \"55878012\",\r\n  \"contactPersonEmail\": \"a1@codediligence.pl\",\r\n  \"contactPersonName\": \"arTest\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/sales/invoice",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"invoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateSalesCreditNote",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"docType\": \"I\",\r\n  \"cardCode\": \"C50000\",\r\n  \"billToCode\": \"Added in Self Service\",\r\n  \"shipToCode\": \"Ship to\",\r\n  \"ownerEmployeeId\": 1,\r\n  \"docDate\": \"2018-06-15T10:45:32.718Z\",\r\n  \"docDueDate\": \"2018-07-15T10:45:32.720Z\",\r\n  \"salesPersonId\": 1,\r\n  \"status\": \"O\",\r\n  \"discountPercent\": 0,\r\n  \"customerReferenceNumber\": \"53453\",\r\n  \"currency\": \"EUR\",\r\n  \"contactPersonId\": 213,\r\n  \"items\": [\r\n    {\r\n      \"lineType\": 0,\r\n      \"lineText\": \"Test text line\",\r\n      \"afterLineNumber\": -1,\r\n      \"_delete\": false\r\n    },\r\n    {\r\n      \"selectedItemGroupId\": 100,\r\n      \"selectedItem\": {\r\n        \"_id\": \"item_MI-I00009\",\r\n        \"id\": \"MI-I00009\",\r\n        \"isWithholdingTaxLiable\": true,\r\n        \"name\": null,\r\n        \"groupName\": \"Items\",\r\n        \"vatCode\": \"O1\",\r\n        \"taxCode\": \"O1\"\r\n      },\r\n      \"itemCode\": \"MI-I00009\",\r\n      \"description\": \"This is my test item\",\r\n      \"warehouseCode\": \"01\",\r\n      \"stockLevel\": 0,\r\n      \"checkingPriceInProgress\": false,\r\n      \"priceBeforeDiscount\": 100,\r\n      \"currency\": \"\",\r\n      \"discountPercent\": 0,\r\n      \"priceAfterDiscount\": 100,\r\n      \"totalPrice\": 1050,\r\n      \"warehouses\": [\r\n        {\r\n          \"WarehouseCode\": \"01\",\r\n          \"WarehouseName\": \"General Wareobi: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"02\",\r\n          \"WarehouseName\": \"Backup Warehouse: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"03\",\r\n          \"WarehouseName\": \"Drop Ship: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"04\",\r\n          \"WarehouseName\": \"Shop 1: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"05\",\r\n          \"WarehouseName\": \"Shop: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"06\",\r\n          \"WarehouseName\": \"Dont select delete: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"07\",\r\n          \"WarehouseName\": \"Yet another warehouse edited: 0\",\r\n          \"ItemCode\": \"MI-I00009\",\r\n          \"Description\": null,\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        }\r\n      ],\r\n      \"quantity\": 10.5,\r\n      \"isWithholdingTaxLiable\": false,\r\n      \"_delete\": false\r\n    }\r\n  ],\r\n  \"enterpryzeCustomFields\": {\r\n    \r\n  },\r\n  \"bankCode\": \"HSBC2\",\r\n  \"bankName\": \"HSBC(House Bank 3)\",\r\n  \"bankAccount\": \"55878012\",\r\n  \"contactPersonEmail\": \"a1@codediligence.pl\",\r\n  \"contactPersonName\": \"arTest\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/sales/credit-note",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"sales",
+								"credit-note"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "CreateIncomingPayment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"items\": [],\r\n    \"docDate\": \"2018-07-25T13:32:21.742Z\",\r\n    \"transferDate\": \"2018-07-25T13:32:21.742Z\",\r\n    \"contactName\": \"ADA Technologies 2\",\r\n    \"customerAddress\": \"FluggeStrasse 6, Hamburg, 22303, KN\",\r\n    \"cardCode\": \"C7000\",\r\n    \"isWithholdingTaxLiable\": false,\r\n    \"customerCurrency\": \"EUR\",\r\n       \"currency\": \"EUR\",\r\n    \"exchangeRate\": 0.8,\r\n    \"shipToCode\": \"Ship to\",\r\n    \"billToCode\": \"Bill To\",\r\n    \"comments\": \"Comments\",\r\n    \"allocatedAmount\": 128,\r\n    \"paymentBalance\": 0,\r\n    \"transferAccount\": \"161000\",\r\n    \"transferSum\": 128,\r\n    \"documents\": [\r\n        {\r\n            \"documentType\": \"SalesInvoice\",\r\n            \"documentDocEntry\": 1120,\r\n            \"amountFc\": 128\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/payment/incoming",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"payment",
+								"incoming"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOutgoingPayment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [],\r\n    \"docDate\": \"2018-07-25T13:37:50.904Z\",\r\n    \"transferDate\": \"2018-07-25T13:37:50.904Z\",\r\n    \"contactName\": \"Lumarx\",\r\n    \"customerAddress\": \"6717 Essington Ave, Philadelphia, 19153, US\",\r\n    \"cardCode\": \"V50000\",\r\n    \"contactId\": \"contact_V50000\",\r\n    \"isWithholdingTaxLiable\": false,\r\n    \"customerCurrency\": \"USD\",\r\n    \"contactPersonName\": \"Geoff\",\r\n    \"contactPersonId\": 86,\r\n    \"contactPersonCode\": 86,\r\n    \"contactPersonEmail\": \"geoffg@iisgroup.eu\",\r\n    \"currency\": \"USD\",\r\n    \"exchangeRate\": 1.2,\r\n    \"shipToCode\": \"Ship to\",\r\n    \"billToCode\": \"Bill To\",\r\n    \"allocatedAmount\": 6.66,\r\n    \"paymentBalance\": 0,\r\n    \"cashAccount\": \"201000\",\r\n    \"cashSum\": 6.66,\r\n    \"comments\": \"comments\",\r\n    \"documents\": [\r\n        {\r\n            \"documentType\": \"PurchaseInvoice\",\r\n            \"documentDocEntry\": 555,\r\n            \"amount\": 6.66\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/payment/outgoing",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"payment",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stock",
+			"item": [
+				{
+					"name": "Adjustment",
+					"item": [
+						{
+							"name": "CreateGoodsIssue",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "surferAuth",
+										"value": "{{surferAuth}}"
+									},
+									{
+										"key": "surferOrganisationId",
+										"value": "{{surferOrganisationId}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"docType\": \"I\",\r\n  \"docDate\": \"2018-06-15T14:34:30.288Z\",\r\n  \"docDueDate\": \"2018-06-15T14:34:30.289Z\",\r\n  \"discountPercent\": 0,\r\n  \"items\": [\r\n    {\r\n      \"itemCode\": \"I00001\",\r\n      \"discountPercent\": 0,\r\n      \"quantity\": 1000,\r\n      \"price\": 10,\r\n      \"selectedItemGroupId\": 0,\r\n      \"warehouses\": [\r\n        {\r\n          \"WarehouseCode\": \"01\",\r\n          \"WarehouseName\": \"General Wareobi: -299\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 69701,\r\n          \"QuantityCommitted\": 70000,\r\n          \"QuantityOnOrder\": 700,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"02\",\r\n          \"WarehouseName\": \"Backup Warehouse: -49900\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": -49900,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"03\",\r\n          \"WarehouseName\": \"Drop Ship: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"04\",\r\n          \"WarehouseName\": \"Spaceship: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"05\",\r\n          \"WarehouseName\": \"Shop: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"06\",\r\n          \"WarehouseName\": \"Dont select delete: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"07\",\r\n          \"WarehouseName\": \"Yet another warehouse edited: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"08\",\r\n          \"WarehouseName\": \"OHHHH MY: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"09\",\r\n          \"WarehouseName\": \"New warehouse edited: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        }\r\n      ],\r\n      \"itemPosition\": 0,\r\n      \"selectedItem\": {\r\n        \"id\": \"I00001\",\r\n        \"name\": \"DVD+R Disc 10-Pack\"\r\n      },\r\n      \"description\": \"DVD+R Disc 10-Pack\",\r\n      \"vatCode\": \"I1\",\r\n      \"totalPrice\": 10000,\r\n      \"_delete\": false,\r\n      \"warehouseCode\": \"01\",\r\n      \"stockLevel\": -299,\r\n      \"warehouseName\": \"General Wareobi: -299\"\r\n    },\r\n    {\r\n      \"itemCode\": \"I00005\",\r\n      \"discountPercent\": 0,\r\n      \"quantity\": 10,\r\n      \"price\": 20,\r\n      \"selectedItemGroupId\": 0,\r\n      \"warehouses\": [\r\n        {\r\n          \"WarehouseCode\": \"01\",\r\n          \"WarehouseName\": \"General Wareobi: 220\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 240,\r\n          \"QuantityCommitted\": 20,\r\n          \"QuantityOnOrder\": 37,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"02\",\r\n          \"WarehouseName\": \"Backup Warehouse: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"03\",\r\n          \"WarehouseName\": \"Drop Ship: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"04\",\r\n          \"WarehouseName\": \"Spaceship: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"05\",\r\n          \"WarehouseName\": \"Shop: -10\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 10,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"06\",\r\n          \"WarehouseName\": \"Dont select delete: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"07\",\r\n          \"WarehouseName\": \"Yet another warehouse edited: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"08\",\r\n          \"WarehouseName\": \"OHHHH MY: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"09\",\r\n          \"WarehouseName\": \"New warehouse edited: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        }\r\n      ],\r\n      \"itemPosition\": 1,\r\n      \"selectedItem\": {\r\n        \"_id\": \"item_I00005\",\r\n        \"id\": \"I00005\",\r\n        \"isWithholdingTaxLiable\": true,\r\n        \"name\": \"J.B. Laptop Batteries X1 series\",\r\n        \"groupName\": \"Items\",\r\n        \"vatCode\": \"I1\",\r\n        \"taxCode\": \"I1\",\r\n        \"defaultPrice\": 20,\r\n        \"defaultCurrency\": \"GBP\"\r\n      },\r\n      \"description\": \"J.B. Laptop Batteries X1 series\",\r\n      \"vatCode\": \"I1\",\r\n      \"warehouseCode\": \"01\",\r\n      \"stockLevel\": 220,\r\n      \"totalPrice\": 200,\r\n      \"warehouseName\": \"General Wareobi: 220\",\r\n      \"_delete\": false\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/public/v1/stock/adjustment/goods-issue",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"public",
+										"v1",
+										"stock",
+										"adjustment",
+										"goods-issue"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateGoodsReceipt",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "surferAuth",
+										"value": "{{surferAuth}}"
+									},
+									{
+										"key": "surferOrganisationId",
+										"value": "{{surferOrganisationId}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"docType\": \"I\",\r\n  \"docDate\": \"2018-06-15T14:34:30.288Z\",\r\n  \"docDueDate\": \"2018-06-15T14:34:30.289Z\",\r\n  \"discountPercent\": 0,\r\n  \"items\": [\r\n    {\r\n      \"itemCode\": \"I00001\",\r\n      \"discountPercent\": 0,\r\n      \"quantity\": 1000,\r\n      \"price\": 10,\r\n      \"selectedItemGroupId\": 0,\r\n      \"warehouses\": [\r\n        {\r\n          \"WarehouseCode\": \"01\",\r\n          \"WarehouseName\": \"General Wareobi: -299\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 69701,\r\n          \"QuantityCommitted\": 70000,\r\n          \"QuantityOnOrder\": 700,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"02\",\r\n          \"WarehouseName\": \"Backup Warehouse: -49900\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": -49900,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"03\",\r\n          \"WarehouseName\": \"Drop Ship: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"04\",\r\n          \"WarehouseName\": \"Spaceship: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"05\",\r\n          \"WarehouseName\": \"Shop: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"06\",\r\n          \"WarehouseName\": \"Dont select delete: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"07\",\r\n          \"WarehouseName\": \"Yet another warehouse edited: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"08\",\r\n          \"WarehouseName\": \"OHHHH MY: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"09\",\r\n          \"WarehouseName\": \"New warehouse edited: 0\",\r\n          \"ItemCode\": \"I00001\",\r\n          \"Description\": \"DVD+R Disc 10-Pack\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        }\r\n      ],\r\n      \"itemPosition\": 0,\r\n      \"selectedItem\": {\r\n        \"id\": \"I00001\",\r\n        \"name\": \"DVD+R Disc 10-Pack\"\r\n      },\r\n      \"description\": \"DVD+R Disc 10-Pack\",\r\n      \"vatCode\": \"I1\",\r\n      \"totalPrice\": 10000,\r\n      \"_delete\": false,\r\n      \"warehouseCode\": \"01\",\r\n      \"stockLevel\": -299,\r\n      \"warehouseName\": \"General Wareobi: -299\"\r\n    },\r\n    {\r\n      \"itemCode\": \"I00005\",\r\n      \"discountPercent\": 0,\r\n      \"quantity\": 10,\r\n      \"price\": 20,\r\n      \"selectedItemGroupId\": 0,\r\n      \"warehouses\": [\r\n        {\r\n          \"WarehouseCode\": \"01\",\r\n          \"WarehouseName\": \"General Wareobi: 220\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 240,\r\n          \"QuantityCommitted\": 20,\r\n          \"QuantityOnOrder\": 37,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"02\",\r\n          \"WarehouseName\": \"Backup Warehouse: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"03\",\r\n          \"WarehouseName\": \"Drop Ship: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"04\",\r\n          \"WarehouseName\": \"Spaceship: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 0,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"05\",\r\n          \"WarehouseName\": \"Shop: -10\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": 0,\r\n          \"QuantityCommitted\": 10,\r\n          \"QuantityOnOrder\": 0,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"06\",\r\n          \"WarehouseName\": \"Dont select delete: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"07\",\r\n          \"WarehouseName\": \"Yet another warehouse edited: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"08\",\r\n          \"WarehouseName\": \"OHHHH MY: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        },\r\n        {\r\n          \"WarehouseCode\": \"09\",\r\n          \"WarehouseName\": \"New warehouse edited: 0\",\r\n          \"ItemCode\": \"I00005\",\r\n          \"Description\": \"J.B. Laptop Batteries X1 series\",\r\n          \"QuantityOnHand\": null,\r\n          \"QuantityCommitted\": null,\r\n          \"QuantityOnOrder\": null,\r\n          \"DefaultWarehouse\": \"N\",\r\n          \"BranchId\": null,\r\n          \"BranchName\": null\r\n        }\r\n      ],\r\n      \"itemPosition\": 1,\r\n      \"selectedItem\": {\r\n        \"_id\": \"item_I00005\",\r\n        \"id\": \"I00005\",\r\n        \"isWithholdingTaxLiable\": true,\r\n        \"name\": \"J.B. Laptop Batteries X1 series\",\r\n        \"groupName\": \"Items\",\r\n        \"vatCode\": \"I1\",\r\n        \"taxCode\": \"I1\",\r\n        \"defaultPrice\": 20,\r\n        \"defaultCurrency\": \"GBP\"\r\n      },\r\n      \"description\": \"J.B. Laptop Batteries X1 series\",\r\n      \"vatCode\": \"I1\",\r\n      \"warehouseCode\": \"01\",\r\n      \"stockLevel\": 220,\r\n      \"totalPrice\": 200,\r\n      \"warehouseName\": \"General Wareobi: 220\",\r\n      \"_delete\": false\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/public/v1/stock/adjustment/goods-receipt",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"public",
+										"v1",
+										"stock",
+										"adjustment",
+										"goods-receipt"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ReadItems",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/stock/item$skip={{skip}}&$top={{top}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"stock",
+								"item$skip={{skip}}&$top={{top}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/public/v1/stock/item/W00078",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"stock",
+								"item",
+								"W00078"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"itemCode\": \"W00078\",\n  \"itemName\": \"Wojtek's item 05\",\n  \"prices\": [\n        {\n            \"itemCode\": \"W00078\",\n            \"priceListNumber\": 1,\n            \"priceListName\": \"Base Price\",\n            \"price\": 77,\n            \"currency\": \"EUR\"\n        }\n    ]\n  \n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/stock/item",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"stock",
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateItem",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"W00078\",\n    \"type\": \"item\",\n    \"itemCode\": \"W00078\",\n    \"itemName\": \"Wojtek's 78\",\n    \"description\": null,\n    \"itemGroupCode\": 104\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/stock/item/W00005",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"stock",
+								"item",
+								"W00005"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Journals",
+			"item": [
+				{
+					"name": "CreateJournalEntry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "surferAuth",
+								"value": "{{surferAuth}}"
+							},
+							{
+								"key": "surferOrganisationId",
+								"value": "{{surferOrganisationId}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"postingDate\": \"2018-06-15T12:47:26.872Z\",\r\n  \"items\": [\r\n    {\r\n      \"lineMemo\": \"Debit\",\r\n      \"accountCode\": \"160000\",\r\n      \"debit\": 200,\r\n      \"accountName\": \"Petty Cash\"\r\n    },\r\n    {\r\n      \"lineMemo\": \"Credit\",\r\n      \"accountCode\": \"161000\",\r\n      \"credit\": 200,\r\n      \"accountName\": \"Bank Account\"\r\n    }\r\n  ],\r\n  \"memo\": \"Test Journal entry\",\r\n  \"totalCredit\": 100,\r\n  \"totalDebit\": 100\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/public/v1/journal/entry",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"public",
+								"v1",
+								"journal",
+								"entry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HRE Authenticate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);\r",
+							"tests[\"surferAuth is present\"] = body.surferAuth;\r",
+							"tests[\"first organisation exists\"] = body.organisations[0].organisation;\r",
+							"postman.setGlobalVariable(\"surferAuth\", body.surferAuth);\r",
+							"postman.setGlobalVariable(\"surferOrganisationId\", body.organisations[0].organisation);\r",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\": \"apitest@test.enterpryze.com\",\n\"password\": \"apitest_15867\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/public/v1/authenticate",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v1",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var body = JSON.parse(responseBody);\r",
+							"tests[\"surferAuth is present\"] = body.surferAuth;\r",
+							"tests[\"first organisation exists\"] = body.organisations[0].organisation;\r",
+							"postman.setGlobalVariable(\"surferAuth\", body.surferAuth);\r",
+							"postman.setGlobalVariable(\"surferOrganisationId\", body.organisations[0].organisation);\r",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\": \"apitest@test.enterpryze.com\",\n\"password\": \"apitest_15867\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/public/v1/authenticate",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"public",
+						"v1",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
