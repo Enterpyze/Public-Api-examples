@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<orders>
+    <order id="" eventId="" name="" email="" organisationId="">
+        <document type="Invoice" docEntry="" docNum="" />
+		<document type="Payment" docEntry="" docNum="" />
+    </order>
+</orders>

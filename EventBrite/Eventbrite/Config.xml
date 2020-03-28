@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <connection>
+        <eventbrite oauthToken="" />
+        <enterpryze environment="Staging" email="" password="" />
+    </connection>
+    <settings>
+        <eventbrite user="" email="" eventId="" />
+        <enterpryze organisationId="" includeFee="false" createBP="false" defaultBP="" />
+    </settings>
+</config>
