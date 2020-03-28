@@ -1,2 +1,2 @@
 # Public-Api-examples
-Examlple integrations using the Enterpryze public API
+Examlple integrations and resources using the Enterpryze public API
